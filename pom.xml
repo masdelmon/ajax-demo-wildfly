@@ -6,11 +6,41 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
     <name>ajax-loader-example</name>
-
+    <url>http://code.bluelotussoftware.com/ajax-loader-example</url>
+    
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+    
+    <inceptionYear>2014</inceptionYear>
+    
+    <organization>
+        <name>Blue Lotus Software, LLC.</name>
+        <url>http://bluelotussoftware.com</url>
+    </organization>
+    
+    <scm>
+        <connection>scm:hg:http://code.bluelotussoftware.com/ajax-loader-example</connection>
+        <developerConnection>scm:hg:https://code.bluelotussoftware.com/ajax-loader-example</developerConnection>
+        <url>http://code.bluelotussoftware.com/ajax-loader-example/src</url>
+    </scm>
+    
+    <developers>
+        <developer>
+            <id>jyeary</id>
+            <name>John Yeary</name>
+            <email>jyeary@bluelotussoftware.com</email>
+            <organization>Blue Lotus Software, LLC</organization>
+            <organizationUrl>http://bluelotussoftware.com</organizationUrl>
+            <timezone>-5</timezone>
+            <url>http://javaevangelist.blogspot.com</url>
+            <roles>
+                <role>Principal</role>
+                <role>Developer</role>
+            </roles>
+        </developer>
+    </developers>
     
     <dependencies>
         <dependency>
@@ -71,5 +101,5 @@
         </plugins>
     </build>
     <description>An example AJAX loader that does not require additional libraries
-other than those provided by JSF directly.</description>
+        other than those provided by JSF directly.</description>
 </project>
