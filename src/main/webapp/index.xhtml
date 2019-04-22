@@ -237,7 +237,7 @@ pre {
          <h:form id="responsePost">
             <h:panelGrid columns="2">
                 <h:outputLabel>Data Post:</h:outputLabel>
-                <h:outputLabel id="outputDataPosts" value="#{name}" />
+                <h:outputLabel id="outputDataPosts" value="#{2+2}" />
             </h:panelGrid>
         </h:form>
       </h:panelGrid>
@@ -250,14 +250,14 @@ pre {
                 <h:outputLabel>User id:</h:outputLabel>
                  <h:inputText id="inputComments" type="number" p:placeholder="Insert a number (1-500)" min="1" max="500" value="#{name}" />
                 <h:commandButton id="add" value="comments" action="#{indexBean.sleep()}">
-                     <f:ajax execute = "inputComments" render = "outputDataComments" />
+                     <f:ajax execute = "@form" render = "outputDataComments" />
                 </h:commandButton>
             </h:panelGrid>
         </h:form>
          <h:form id="responseComments">
             <h:panelGrid columns="2">
                 <h:outputLabel>Data Comments:</h:outputLabel>
-                <h:outputLabel id="outputDataComments" value="#{name}" />
+                <h:outputLabel id="outputDataComments" value="#{2+2}" />
             </h:panelGrid>
         </h:form>
       </h:panelGrid>  
