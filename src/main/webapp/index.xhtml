@@ -9,11 +9,29 @@
         <h:outputScript library="javax.faces" name="jsf.js" target="head"/>
     </h:head>
     <h:body>
-        <h:form>
+        <h:panelGrid columns="1">
+        <h:form id="postsForm">
+            <h:panelGrid columns="3">
+                <h:outputLabel>User id:</h:outputLabel>
+                <h:inputText id="inputPosts" type="number" p:placeholder="Insert a number (1-100)" min="1" max="100" value="#{name}" />
+                <h:commandButton id="add" value="post" action="#{indexBean.sleep()}">
+                      <f:ajax execute="@form" render="outputDataPosts" />
+                </h:commandButton>
+            </h:panelGrid>
+        </h:form>
+         <h:form id="responsePost">
+            <h:panelGrid columns="2">
+                <h:outputLabel>Data Post:</h:outputLabel>
+                <h:outputLabel id="outputDataPosts" value="#{2+2}" />
+            </h:panelGrid>
+        </h:form>
+         <h:form>
             <h:commandButton value="Submit" action="#{indexBean.sleep()}">
                 <f:ajax execute="@form"/>
             </h:commandButton>
         </h:form>
+      </h:panelGrid>
+       
         <div class="modal"><!-- Place at bottom of page before JS --></div>
         
         <script type="text/javascript">
