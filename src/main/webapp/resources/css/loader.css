@@ -18,12 +18,6 @@
     background-repeat: no-repeat;
 }
 
-.modal_partial {
-    
-    
-    background-image: url('#{facesContext.externalContext.requestContextPath}/resources/images/ajax-loader.gif');
-    
-}
 
 /* When the body has the loading class, we turn
  * the scrollbar off with overflow:hidden 
@@ -35,6 +29,6 @@ body.loading {
 /* Anytime the body has the loading class, our
  * modal element will be visible 
 */
-body.loading .modal_partial {
+body.loading .modal {
     display: block;
 }
